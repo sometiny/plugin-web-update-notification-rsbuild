@@ -67,7 +67,7 @@ function injectPluginHtml(
   return res;
 }
 
-export function webUpdateNotice(options: Options = {}): RsbuildPlugin {
+export function webUpdateNotice(options: Options = {}, when?: 'dev' | 'preview' | 'build'): RsbuildPlugin {
   const { versionType, customVersion, silence } = options;
   let version = '';
   if (versionType === 'custom') version = getVersion(versionType, customVersion!);
@@ -85,7 +85,9 @@ export function webUpdateNotice(options: Options = {}): RsbuildPlugin {
 
   return {
     name: 'vue-rsbuild-web-update-notice',
-    apply: 'build',
+    apply: (config,context) =>{
+      return when === undefined || context.action === when
+    },
     setup(api: RsbuildPluginAPI) {
       const config = api.getRsbuildConfig();
       if (options.injectFileBase === undefined) options.injectFileBase = config.server?.base || '/';
