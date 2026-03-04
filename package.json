@@ -1,5 +1,5 @@
 {
-  "name": "@plugin-web-update-notification/rsbuild",
+  "name": "plugin-web-update-notification-rsbuild",
   "type": "module",
   "version": "1.0.0",
   "description": "Rsbuild plugin for detect web page updates and notify. based on @plugin-web-update-notification/core.",
