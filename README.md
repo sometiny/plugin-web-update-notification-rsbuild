@@ -11,7 +11,7 @@ npm i plugin-update-notification-rsbuild -D
 ## 使用
 基于plugin-web-update-notification，参数配置完全一致。
 ```ts
-import { webUpdateNotice } from 'plugin-web-update-notification-rsbuild';
+import { webUpdateNotice } from 'plugin-update-notification-rsbuild';
 
 export default defineConfig({
   plugins: [

@@ -1,7 +1,7 @@
 {
   "name": "plugin-update-notification-rsbuild",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rsbuild plugin for detect web page updates and notify. based on @plugin-web-update-notification/core.",
   "author": "Anlige",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "keywords": [
     "rsbuild",
     "rsbuild-plugin",
-    "plugin-web-update-notification-rsbuild",
+    "plugin-update-notification-rsbuild",
     "web-update-notification"
   ],
   "sideEffects": false,
