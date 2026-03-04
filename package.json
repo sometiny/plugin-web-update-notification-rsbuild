@@ -1,0 +1,39 @@
+{
+  "name": "@plugin-web-update-notification/rsbuild",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Rsbuild plugin for detect web page updates and notify. based on @plugin-web-update-notification/core.",
+  "author": "Anlige",
+  "license": "MIT",
+  "homepage": "https://github.com/sometiny/plugin-web-update-notification-rsbuild",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sometiny/plugin-web-update-notification-rsbuild"
+  },
+  "bugs": {
+    "url": "https://github.com/sometiny/plugin-web-update-notification-rsbuild/issues"
+  },
+  "keywords": [
+    "rsbuild",
+    "rsbuild-plugin",
+    "plugin-web-update-notification-rsbuild",
+    "web-update-notification"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "@plugin-web-update-notification/core": "^2.0.2"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.4.13",
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.2"
+  }
+}
