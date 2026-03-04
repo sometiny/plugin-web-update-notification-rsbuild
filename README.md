@@ -6,7 +6,7 @@
 ## 安装
 
 ```bash
-pnpm add plugin-web-update-notification-rsbuild -D
+npm i plugin-update-notification-rsbuild -D
 ```
 ## 使用
 基于plugin-web-update-notification，参数配置完全一致。
